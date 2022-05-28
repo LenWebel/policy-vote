@@ -1,0 +1,26 @@
+.voteContainer {
+  width: 350px;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 18px;
+  div {
+    line-height: 24px;
+  }
+  .title {
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .proposer {
+    font-size: smaller;
+    display: flex;
+    justify-content: flex-end;
+    font-size: small;
+  }
+
+  .description {
+    font-weight: 200;
+  }
+}
