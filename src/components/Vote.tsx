@@ -14,7 +14,7 @@ export interface VoteProps {
   proposer: string;
   status: PolicyStatusType;
   votes: number;
-  onVoted: (value: boolean) => void;
+  onVoted?: (value: boolean) => void;
 }
 
 export interface YesNoVoteProps extends VoteProps {}
@@ -24,7 +24,7 @@ export function Vote(props: VoteProps) {
     <div className={styles.voteContainer}>
       <div className={styles.title}>
         <span>{props.title}</span>
-        <span>
+        <span style={{ height: 20, width: 20 }}>
           <PolicyStatus status={props.status} />
         </span>
       </div>
